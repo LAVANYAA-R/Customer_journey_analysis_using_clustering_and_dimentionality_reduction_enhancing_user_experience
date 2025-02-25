@@ -1,34 +1,53 @@
 # Customer_journey_analysis_using_clustering_and_dimentionality_reduction_enhancing_user_experience
-Project Overview
-This project focuses on analyzing customer behavior throughout their purchasing journey. It involves data preprocessing, visualization, and clustering techniques to segment customers based on their engagement levels. By leveraging machine learning, the project aims to extract meaningful insights that can help businesses optimize their marketing and sales strategies.
+# Customer-Journey-Analysis-Using-Clustering-and-Dimensionality-Reduction-Enhancing-User-Experience-
+This project analyzes customer behavior patterns using K-Means Clustering and UMAP Dimensionality Reduction to segment users based on their interaction with travel-related platforms. It helps identify high-value customers, casual browsers, and frequent travelers for personalized marketing strategies.
+📊 Customer Journey Analysis Using Clustering and Dimensionality Reduction
 
-Key Components
-Data Collection & Preprocessing
+🌟 Project Overview
 
-The dataset contains information about customer interactions on a travel-related website.
-Features include yearly average views on travel pages, yearly comments, and product purchases.
-Data preprocessing involves handling missing values, normalizing numerical features using StandardScaler, and encoding categorical variables using OneHotEncoder.
-Customer Journey Funnel Analysis
+The Customer Journey Analysis (CJA) project aims to analyze user behavior patterns on travel-related platforms. By leveraging K-Means Clustering and UMAP Dimensionality Reduction, this project segments customers based on their browsing habits, check-ins, and time spent on travel pages.
 
-The project identifies key stages in the customer journey:
-Viewing the travel page
-Commenting on the travel page
-Purchasing a product
-It calculates the percentage of users at each stage and visualizes the drop-off rate using funnel plots.
-Clustering Customers
+This segmentation helps businesses identify high-value customers, casual browsers, and frequent travelers, enabling personalized marketing and user experience improvements.
 
-K-Means Clustering: Segments customers into groups based on engagement patterns.
-Hierarchical Clustering: Provides insights into how customers relate to each other.
-The goal is to identify high-value customers, casual browsers, and those likely to convert.
-Dimensionality Reduction
+🚀 Key Features
+	1.	Data Upload: Upload customer behavior datasets via an interactive Streamlit interface.
+	2.	Feature Selection: Choose relevant features for clustering, like yearly views, check-ins, and comments.
+	3.	Dimensionality Reduction: Use UMAP to simplify complex datasets while retaining meaningful patterns.
+	4.	Customer Clustering: Apply K-Means clustering to segment users into behavioral groups.
+	5.	Visualization: Display clusters with scatter plots, bar charts, and funnel visualizations.
+	6.	Downloadable Results: Export the segmented dataset as a CSV or Pickle file for further analysis.
+ 
+ 🛠️ Tech Stack
+	•	Programming Language: Python
+	•	Data Analysis: Pandas, NumPy
+	•	Machine Learning: Scikit-Learn
+	•	Dimensionality Reduction: UMAP
+	•	Visualization: Seaborn, Matplotlib
+	•	Web App Interface: Streamlit
+ 
+ 📂 Project Structure
+  📦 CJA_Project
+├─ 📄 CJA.ipynb               # Jupyter Notebook with project code
+├─ 📄 UI.ipynb                # Jupyter Notebook for Streamlit UI
+├─ 📄 CJA_main_ui.py          # Streamlit app for real-time analysis
+├─ 📄 Customer behaviour Tourism.csv  # Sample dataset
+├─ 📄 README.md               # Project documentation (this file)
 
-Principal Component Analysis (PCA) is applied to reduce the number of features while retaining significant variance.
-This helps in improving the efficiency of clustering and visualization.
-Visualizing Insights
+⚙️ Setup Instructions
+	
+ 1.	Clone the Repository: git clone https://github.com/yourusername/Customer-Journey-Analysis.git
+cd Customer-Journey-Analysis.
+	
+ 2.	Create Virtual Environment (Optional but Recommended):
+ python3 -m venv cja_env
+source cja_env/bin/activate  # Mac/Linux
+cja_env\\Scripts\\activate   # Windows
+	
+ 3.	Install Required Packages:pip install -r requirements.txt
+ 4.	Run the Streamlit App:streamlit run CJA_main_ui.py
 
-Bar charts and box plots showcase how different customer segments behave.
-Scatter plots (using PCA) help in understanding cluster distributions.
-Business Impact
-Helps businesses target the right audience with personalized marketing.
-Identifies potential churners who need re-engagement strategies.
-Enhances conversion rates by optimizing website engagement.
+📊 Sample Output
+Here’s what the Streamlit interface looks like:
+	•	📤 Upload CSV file
+	•	📈 Visualize customer clusters
+	•	📥 Download segmented results
